@@ -15,17 +15,18 @@ function Page2({nextStep,prevStep}){
       };
     return(
         <Box backgroundColor={'black'} width={'694px'} height={'244px'} className=' sm:min-w-full md:min-w-full'>
-            <div className='container my-auto text-center inline-grid'>
-            <h1 className='text-3xl pt-2'>Question Title</h1>
+            <div className='houseType'>
+            <h2 className='houseType__title '>Question Title</h2>
             
-                <div className=' my-5 py-5 items-center'> 
+                <div className='houseType__content radBox__item'> 
                     <input
                         type="radio"
                         id={`house`}
                         name="rating"
                         value='Option 1'
+                        className='radBox__item'
                     />
-                    <label htmlFor={'house'} className='mr-3'> Option Label</label>
+                    <label htmlFor={'house'} className='radBox_label'> Option Label</label>
                  
                     
                     <input
@@ -33,6 +34,7 @@ function Page2({nextStep,prevStep}){
                         id={`house`}
                         name="rating"
                         value='Option 1'
+                        className='radBox__item'
                     />
                     <label htmlFor={'house'} className='mr-3'> Option Label</label>
                    
@@ -42,11 +44,12 @@ function Page2({nextStep,prevStep}){
                         id={`house`}
                         name="rating"
                         value='Option 1'
+                        className='radBox__item'
                     />
                     <label htmlFor={'house'}> Option Label</label>
                 </div>
-                <div className='space-x-96'>
-                <Button onClick={Previous} label={'Previous'} className='mr-10 ' />
+                <div className=''>
+                <Button onClick={Previous} label={'Previous'} className='houseType__cta' marginRight={'15rem'} />
                 <Button  onClick={Continue} label={'Continue'}/>
                 </div>
             </div>

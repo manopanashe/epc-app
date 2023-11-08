@@ -3,6 +3,7 @@ import Page1 from './Page1'
 import Page2 from './Page2'
 import Page3 from './Page3'
 import Page4 from './Page4'
+import Page5 from './Page5'
 import CustomPage from './CustomPage'
 
 export default class Mainform extends Component{
@@ -99,6 +100,14 @@ switch (step) {
        
         />
       )
+      case 5:
+        return(
+          <Page5 
+          prevStep={this.prevStep}
+          resetForm={this.resetForm}
+          values={values}
+          />
+        )
     case 'custom':
     return(
       <CustomPage  

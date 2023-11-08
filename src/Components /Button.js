@@ -9,13 +9,13 @@ const StyledButton = styled.button`
   padding: 10px 20px;
   border: solid 1px white;
   cursor: pointer;
-  
+  margin-right: ${(props) => props.marginRight || 'auto'}
  
 `;
 
-const Button = ({label, onClick, backgroundColor, textColor, width}) => {
+const Button = ({label, onClick, backgroundColor, textColor, width, className,marginRight}) => {
     return(
-        <StyledButton onClick={onClick} backgroundColor={backgroundColor} textColor={textColor} >
+        <StyledButton onClick={onClick} backgroundColor={backgroundColor} textColor={textColor} className={className} marginRight={marginRight}>
        
         {label}
          </StyledButton>

@@ -15,65 +15,69 @@ function Page3({nextStep,prevStep}){
       };
     return(
         <Box backgroundColor={'black'} width={'694px'} height={'244px'} className=' sm:min-w-full md:min-w-full'>
-             <div className='container my-auto text-center inline-grid'>
-            <h1 className='text-3xl pt-2'>Question Title</h1>
+             <div className='rooms '>
+            <h2 className='rooms__title '>Question Title</h2>
             
-                <div className=' mt-4 pt-4 pb-3 mb-3 items-center'> 
+                <div className='rooms__setOne roomRadBox'> 
                     <input
                         type="radio"
-                        id={`house`}
+                        id={` numberofBedrooms`}
                         name="rating"
                         value='Option 1'
                     />
-                    <label htmlFor={'house'} className='mr-3'> Option Label</label>
+                    <label htmlFor={' numberofBedrooms'} className='roomRadBox__item'> Option Label</label>
                  
                     
                     <input
                         type="radio"
-                        id={`house`}
+                        id={` numberofBedrooms`}
                         name="rating"
                         value='Option 1'
+                       
                     />
-                    <label htmlFor={'house'} className='mr-3'> Option Label</label>
+                    <label htmlFor={' numberofBedrooms'}  className='roomRadBox__item'> Option Label</label>
                    
                     
                     <input
                         type="radio"
-                        id={`house`}
+                        id={` numberofBedrooms`}
                         name="rating"
                         value='Option 1'
+                  
                     />
-                    <label htmlFor={'house'}> Option Label</label>
+                    <label htmlFor={' numberofBedrooms'}> Option Label</label>
                 </div>
-                <div className='pb-4 items-center'> 
+                <div className='rooms__setTwo roomRadBo'> 
                     <input
                         type="radio"
-                        id={`house`}
+                        id={` numberofBedrooms`}
                         name="rating"
                         value='Option 1'
+                  
                     />
-                    <label htmlFor={'house'} className='mr-3'> Option Label</label>
-                 
+                    <label htmlFor={' numberofBedrooms'}  className='roomRadBox__item'> Option Label</label>
                     
                     <input
                         type="radio"
-                        id={`house`}
+                        id={` numberofBedrooms`}
                         name="rating"
                         value='Option 1'
+                     
                     />
-                    <label htmlFor={'house'} className='mr-3'> Option Label</label>
+                    <label htmlFor={' numberofBedrooms'}  className='roomRadBox__item'> Option Label</label>
                    
                     
                     <input
                         type="radio"
-                        id={`house`}
+                        id={` numberofBedrooms`}
                         name="rating"
                         value='Option 1'
+                        
                     />
-                    <label htmlFor={'house'}> Option Label</label>
+                    <label htmlFor={' numberofBedrooms'}> Option Label</label>
                 </div>
-                <div className='space-x-96'>
-                <Button onClick={Previous} label={'Previous'} className='mr-10 ' />
+                <div >
+                <Button onClick={Previous} label={'Previous'} className='houseType__cta' marginRight={'15rem'}  />
                 <Button  onClick={Continue} label={'Continue'}/>
                 </div>
             </div>

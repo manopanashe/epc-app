@@ -9,14 +9,17 @@ function Page1 ({nextStep}){
            nextStep() 
     }
     return(
-        <Box backgroundColor={'black'} width={'694px'} height={'244px'}>
-            <div className='grid grid-cols-2'>
-                <div className='text-center container py-10'>
-                    <h1 className=' text-4xl pb-2'>Form Title</h1>
+        <Box  className='main_container'>
+            <div className='content'>
+                <div className='content__body context'>
+                    <h2 className='context__title' >Form Title</h2>
                     <Button label={'Button Title'} onClick={Continue}/>
                 </div>
-                <div className="container mx-auto">
-                    <img src='https://fakeimg.pl/400x280?text=Placeholder+Image'></img>
+                <div className="content__media ">
+                    <picture>
+                    <img src='https://fakeimg.pl/359x264?text=Placeholder+Image'></img>
+                    </picture>
+                   
                 </div>
             </div>
         </Box>
